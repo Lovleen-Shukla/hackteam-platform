@@ -1,0 +1,51 @@
+/* src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom global styles or overrides */
+body {
+  font-family: 'Inter', sans-serif; /* Use your chosen font */
+  @apply text-lighttext bg-darkbg; /* Apply default text and background colors */
+  overflow-x: hidden; /* Prevent horizontal scroll from animations */
+}
+
+/* Scrollbar styling for general scrollbars (optional, for aesthetics) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-darkbg;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-secondary;
+}
+
+/* Apply box-sizing globally for easier layout */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar for chat (specific class, not global) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #2D3748; /* color of the tracking area */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #6B46C1; /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  border: 1px solid #2D3748; /* creates padding around scroll thumb */
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #4299E1;
+}

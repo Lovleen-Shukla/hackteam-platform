@@ -1,0 +1,45 @@
+# hackteam/.gitignore (NEW ROOT .gitignore FILE)
+
+# Global dependencies folders (applies to both frontend and backend)
+**/node_modules
+**/package-lock.json # Good to ignore for consistency, Render/Docker will generate
+**/yarn.lock # If you use yarn
+
+# Build output (applies to frontend)
+**/build
+**/dist
+
+# Environment variables (CRUCIAL! Applies to all .env files anywhere in the repo)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production # Render will configure this, not from source
+
+# Logs and temporary files
+npm-debug.log*
+yarn-debug.log*
+*.log
+tmp/
+.cache/
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operating system generated files
+.DS_Store
+Thumbs.db
+
+# Docker specific ignores (to avoid copying large or temporary files into build context)
+**/node_modules/ # Important for Docker builds to ensure node_modules is rebuilt inside container
+**/npm-debug.log*
+**/yarn-error.log*
+**/build/ # Ensure Docker doesn't copy local build output unless specified
+**/dump_hackteam_data/ # If you used mongodump locally
+
+# Backend specific ignores if not caught by global ones
+backend/uploads/ # Directory for uploaded files - should not be in Git
