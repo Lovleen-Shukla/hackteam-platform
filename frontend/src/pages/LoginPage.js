@@ -126,7 +126,7 @@ const LoginPage = () => {
           </p>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-white/20 relative z-10">
+        {/* <div className="mt-10 pt-6 border-t border-white/20 relative z-10">
           <div className="flex justify-center space-x-4">
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -142,8 +142,8 @@ const LoginPage = () => {
             >
               <Linkedin className="h-6 w-6 text-white" />
             </motion.button>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </motion.div>
     </div>
   );
