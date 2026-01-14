@@ -52,7 +52,7 @@ const HomePage = () => {
             {/* Changed to use Link component for internal navigation */}
             <Link to="/register" className="block w-full sm:w-auto">
               <Button variant="secondary" className="w-full px-8 py-4 text-xl">
-                <Users /> Join HackTeam
+                <Users /> Join HackSquad
               </Button>
             </Link>
           </motion.div>
@@ -63,7 +63,7 @@ const HomePage = () => {
       <section className="py-20 px-4 bg-darkbg">
         <div className="container mx-auto">
           <h2 className="text-5xl font-bold text-center text-white mb-16 font-heading">
-            Why HackTeam?
+            Why HackSquad?
           </h2>
           <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
             <motion.div
@@ -129,7 +129,7 @@ const HomePage = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl mb-10 max-w-xl mx-auto"
         >
-          Join HackTeam today and find the perfect collaborators for your next big idea.
+          Join HackSquad today and find the perfect collaborators for your next big idea.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -150,7 +150,7 @@ const HomePage = () => {
 
       {/* Footer (simple for now) */}
       <footer className="py-10 text-center text-gray-400 bg-gray-900">
-        <p>&copy; {new Date().getFullYear()} HackTeam. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} HackSquad. All rights reserved.</p>
       </footer>
     </div>
   );

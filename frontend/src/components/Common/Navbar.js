@@ -29,7 +29,7 @@ const Navbar = () => {
         {/* Logo and Site Title */}
         <Link to="/" className="flex items-center space-x-2 text-white text-2xl font-bold font-heading">
           <Users className="h-7 w-7 text-primary" />
-          <span>HackTeam</span>
+          <span>HackSquad</span>
         </Link>
 
         {/* Navigation Links */}

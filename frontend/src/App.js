@@ -17,6 +17,7 @@ import CreateTeamPage from './pages/CreateTeamPage';
 import NotificationsPage from './pages/NotificationsPage';
 import EditTeamPage from './pages/EditTeamPage';
 import UserListPage from './pages/UserListPage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
-
+          <Route path="/about" element={<AboutPage />} />
           {/* Protected Routes - only accessible if authenticated */}
           <Route element={<PrivateRoute />}>
             <Route path="/dashboard" element={<DashboardPage />} />
