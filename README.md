@@ -1,4 +1,4 @@
-# 🚀 HackSquad – Full Stack Hackathon Collaboration Platform
+# 🚀 HackTeam – Full Stack Hackathon Collaboration Platform
 
 <p align="center">
   <b>Find teammates • Build together • Ship faster</b>
@@ -16,7 +16,7 @@
 
 ## 🧠 Overview
 
-HackSquad is a **real-time hackathon collaboration platform** that helps developers:
+HackTeam is a **real-time hackathon collaboration platform** that helps developers:
 - 👥 Discover and join teams
 - 💬 Communicate instantly via live chat
 - ⭐ Build credibility through peer reviews
@@ -108,7 +108,7 @@ cd hackteam-platform
 
 #### backend/.env
 ```
-MONGO_URI=mongodb://localhost:27017/hacksquad
+MONGO_URI=mongodb://localhost:27017/hackTeam
 JWT_SECRET=your_secret_key
 PORT=5000
 ```
